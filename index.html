@@ -6,6 +6,15 @@
     <title>Unity WebGL Player | VirtualPacific</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <style>
+      body {
+        overflow: hidden!important;
+      }
+      #unity-container {
+        width: 100%!important;
+        height: 100%!important;
+      }
+    </style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -17,9 +26,6 @@
         </div>
       </div>
       <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-fullscreen-button"></div>
-      </div>
     </div>
     <script>
       var container = document.querySelector("#unity-container");
